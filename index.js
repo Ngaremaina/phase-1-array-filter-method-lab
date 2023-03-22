@@ -7,6 +7,7 @@ function findMatching(drivers, string){
 function fuzzyMatch(drivers, string){
     return drivers.filter(
         word => word[0] === string[0] || word[1]=== string[1]
+        // word => word.startsWith(string)
     )
 }
 
